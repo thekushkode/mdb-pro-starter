@@ -1,0 +1,27 @@
+/* css page */
+
+
+ul {
+    display: flex;
+} 
+
+#z_index {
+    z-index: 10;
+    position: absolute;
+}
+
+li {
+    justify-self: flex-end;
+}
+
+.thirty_percent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 33%;
+}
+
+.seventy_percent {
+    display: flex;
+    width: 70%;
+}
+
