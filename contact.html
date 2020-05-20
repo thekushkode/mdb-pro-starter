@@ -222,8 +222,8 @@
                     <button class="btn btn-outline-info btn-md m-0 px-3 dropdown-toggle" type="button" data-toggle="dropdown"
                       aria-haspopup="true" aria-expanded="false">Dropdown</button>
                     <div class="dropdown-menu dropdown-secondary">
-                      <p class="dropdown-item" value="yes" name="has-boarded">Yes</a>
-                      <p class="dropdown-item" value="no" name="has-not-boarded">No</a>
+                      <p class="dropdown-item" value="yes" name="is-housebroken">Yes</a>
+                      <p class="dropdown-item" value="no" name="is-not-housebroken">No</a>
                     </div>
                   </div>
                   <input type="text" class="form-control" aria-label="Text input with dropdown button">
@@ -232,14 +232,11 @@
               <div class="col-med-6">
                 <div class="md-form input-group mb-3">
                   <div class="input-group-prepend dropdown">
-                    <button class="btn btn-outline-secondary btn-md m-0 px-3 dropdown-toggle" type="button" data-toggle="dropdown"
+                    <button class="btn btn-outline-info btn-md m-0 px-3 dropdown-toggle" type="button" data-toggle="dropdown"
                       aria-haspopup="true" aria-expanded="false">Dropdown</button>
                     <div class="dropdown-menu dropdown-secondary">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                      <div role="separator" class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Separated link</a>
+                      <p class="dropdown-item" name="is-spayed-neutered" value="yes">Action</p>
+                      <p class="dropdown-item" name="not-spayed-neutered" value="no">Another action</p>
                     </div>
                   </div>
                   <input type="text" class="form-control" aria-label="Text input with dropdown button">
@@ -253,7 +250,7 @@
           </form>
 
           <div class="text-center text-md-left">
-            <a class="btn btn-primary" onclick="validateForm();">Send</a>
+            <a class="btn btn-primary" type="submit" onclick="validateForm();">Send</a>
           </div>
           <div class="status"></div>
         </div>
