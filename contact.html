@@ -94,54 +94,160 @@
         directly. Our team will come back to you as soon as possible!</p>
 
       <div class="row">
-
-
         <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-
+          <form id="new-customer-form" name="new-customer-form" data-netlify="true" action="mail.php" method="POST">
             <div class="row">
-
-
               <div class="col-md-6">
                 <div class="md-form mb-0">
                   <input type="text" id="name" name="name" class="form-control">
                   <label for="name" class="">Your name</label>
                 </div>
               </div>
-
               <div class="col-md-6">
                 <div class="md-form mb-0">
                   <input type="text" id="email" name="email" class="form-control">
                   <label for="email" class="">Your email</label>
                 </div>
               </div>
-
-
             </div>
 
             <div class="row">
               <div class="col-md-12">
                 <div class="md-form mb-0">
-                  <input type="text" id="subject" name="subject" class="form-control">
-                  <label for="subject" class="">Subject</label>
+                  <input type="text" id="address1" name="address1" class="form-control">
+                  <label for="address1" class="">Address</label>
                 </div>
               </div>
             </div>
 
             <div class="row">
-
-
               <div class="col-md-12">
-
                 <div class="md-form">
-                  <textarea type="text" id="message" name="message" rows="2"
+                  <textarea type="text" id="address2" name="address2" rows="2"
                     class="form-control md-textarea"></textarea>
-                  <label for="message">Your message</label>
+                  <label for="address2">Address (optional)</label>
                 </div>
-
               </div>
             </div>
+
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="City" name="City" class="form-control">
+                  <label for="City" class="">City</label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="md-form mb-0">
+                  <!-- <input type="text" id="state" name="state" class="form-control"> -->
+                  <label for="state" class="" name="state"><strong>Georgia</strong></label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="zipcode" name="zipcode" class="form-control">
+                  <label for="zipcode" class="">Zip Code</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="dog-name" name="dog-name" class="form-control">
+                  <label for="dog-name" class="">Dog's Name(s)</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="dog-age" name="dog-age" class="form-control">
+                  <label for="dog-age" class="" name="state">Age(s)</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="dog-sex" name="dog-sex" class="form-control">
+                  <label for="dog-sex" class="">Gender(s)</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="breed" name="breed" class="form-control">
+                  <label for="breed" class="">Breed(s)</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="color" name="color" class="form-control">
+                  <label for="color" class="" name="state">Color</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="weight" name="weight" class="form-control">
+                  <label for="weight" class="">Weight</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="brand-of-food" name="brand-of-food" class="form-control">
+                  <label for="brand-of-food" class="">Brand of Food</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="feeding-schedule" name="feeding-schedule" class="form-control">
+                  <label for="feeding-schedule" class="" name="state">Feeding Schedule/Amount</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="flea-control-brand" name="flea-control-brand" class="form-control">
+                  <label for="flea-control-brand" class="">Flea Control Brand</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-med-6">
+                <div class="md-form input-group mb-3">
+                  <div class="input-group-prepend dropdown">
+                    <button class="btn btn-outline-info btn-md m-0 px-3 dropdown-toggle" type="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                    <div class="dropdown-menu dropdown-secondary">
+                      <p class="dropdown-item" value="yes" name="has-boarded">Yes</a>
+                      <p class="dropdown-item" value="no" name="has-not-boarded">No</a>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                </div>
+              </div>
+              <div class="col-med-6">
+                <div class="md-form input-group mb-3">
+                  <div class="input-group-prepend dropdown">
+                    <button class="btn btn-outline-secondary btn-md m-0 px-3 dropdown-toggle" type="button" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                    <div class="dropdown-menu dropdown-secondary">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div role="separator" class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                </div>
+              </div>
+
+            </div>
+            
 
 
           </form>
@@ -154,15 +260,17 @@
 
         <div class="col-md-3 text-center">
           <ul class="list-unstyled mb-0">
-            <li><i class="fas fa-map-marker-alt fa-2x"></i>
-              <p>Atlanta, GA 30339, USA</p>
+            <li><a
+                href="https://www.google.com/maps/dir//Bark+Avenue+Pet+Resort,+Olympic+Industrial+Drive,+Atlanta,+GA/@33.8337635,-84.5409727,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x88f51a8deee81af3:0x67ab728eb1b30ea3!2m2!1d-84.4709319!2d33.8337833"><i
+                  class="fas fa-map-marker-alt fa-2x"></i></a>
+              <p>2961 Olympic Industrial Dr.<br>Atlanta, GA 30339, USA</p></a>
             </li>
 
-            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+            <li><a href="tel:4043678445"><i class="fas fa-phone mt-4 fa-2x"></i></a>
               <p>404.367.8445</p>
             </li>
 
-            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+            <li><a href="mailto:bark@bellsouth.net"><i class="fas fa-envelope mt-4 fa-2x"></i></a>
               <p>bark@bellsouth.net</p>
             </li>
           </ul>
@@ -263,7 +371,7 @@
 
           $('#status').text(data.message);
           if (data.code) //If mail was sent successfully, reset the form.
-            $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+            $('#new-customer-form').closest('form').find("input[type=text], textarea").val("");
         },
         error: function (jqXHR, textStatus, errorThrown) {
           $('#status').text(jqXHR);
