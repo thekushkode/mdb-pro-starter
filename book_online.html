@@ -84,6 +84,162 @@
   </header>
 
   <main>
+    <section class="m-4">
+
+
+      <h2 class="h1-responsive font-weight-bold text-center my-4">Book Online</h2>
+
+      <p class="text-center w-responsive mx-auto mb-5">Please fill out the form below or download our <a
+          href="./forms.html">forms here.</a></p>
+
+      <div class="row">
+        <div class="col-md-9 mb-md-0 ml-sm-1 mb-5" style="margin-left: 120px">
+
+          <form id="new-customer-form" name="new-customer-form" data-netlify="true" action="mail.php" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="name" name="name" class="form-control">
+                  <label for="name" class="">Your name</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="md-form mb-0">
+                  <input type="text" id="email" name="email" class="form-control">
+                  <label for="email" class="">Your email</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="address1" name="address1" class="form-control">
+                  <label for="address1" class="">Address</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form">
+                  <textarea type="text" id="address2" name="address2" rows="2"
+                    class="form-control md-textarea"></textarea>
+                  <label for="address2">Address (optional)</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="City" name="City" class="form-control">
+                  <label for="City" class="">City</label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="md-form mb-0">
+                  <!-- <input type="text" id="state" name="state" class="form-control"> -->
+                  <label for="state" class="" name="state"><strong>Georgia</strong></label>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="zipcode" name="zipcode" class="form-control">
+                  <label for="zipcode" class="">Zip Code</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="dog-name" name="dog-name" class="form-control">
+                  <label for="dog-name" class="">Dog's Name(s)</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="dog-age" name="dog-age" class="form-control">
+                  <label for="dog-age" class="" name="state">Age(s)</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="dog-sex" name="dog-sex" class="form-control">
+                  <label for="dog-sex" class="">Gender(s)</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="breed" name="breed" class="form-control">
+                  <label for="breed" class="">Breed(s)</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="color" name="color" class="form-control">
+                  <label for="color" class="" name="state">Color</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="weight" name="weight" class="form-control">
+                  <label for="weight" class="">Weight</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4 mb-4">
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="brand-of-food" name="brand-of-food" class="form-control">
+                  <label for="brand-of-food" class="">Brand of Food</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="feeding-schedule" name="feeding-schedule" class="form-control">
+                  <label for="feeding-schedule" class="" name="state">Feeding Schedule/Amount</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="flea-control-brand" name="flea-control-brand" class="form-control">
+                  <label for="flea-control-brand" class="">Flea Control Brand</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-check">Housebroken?
+                <input type="radio" class="form-check-input" id="is-housebroken" name="housebroken">
+                <label class="form-check-label" for="is-housebroken">Yes</label>
+                <input type="radio" class="form-check-input" id="not-housebroken" name="housebroken">
+                <label class="form-check-label" for="not-housebroken">No</label>
+              </div>
+              <div class="form-check ml-4">Spayed/Neutered?
+                <input type="radio" class="form-check-input" id="is-spayed-neutered" name="spayed-neutered">
+                <label class="form-check-label" for="is-spayed-neutered">Yes</label>
+                <input type="radio" class="form-check-input" id="no-spayed-neutered" name="spayed-neutered">
+                <label class="form-check-label" for="no-spayed-neutered">No</label>
+              </div>
+            </div>
+          </form>
+
+          <div class="text-center text-md-left mt-4">
+            <a class="btn btn-primary" type="submit" form="new-customer-form"
+              onclick="document.getElementById('new-customer-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
+        </div>
+
+      </div>
+
+    </section>
 
   </main>
 
