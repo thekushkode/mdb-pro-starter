@@ -95,7 +95,7 @@
       <div class="row">
         <div class="col-md-9 mb-md-0 ml-sm-1 mb-5" style="margin-left: 120px">
 
-          <form id="new-customer-form" name="new-customer-form" data-netlify="true" action="mail.php" method="POST">
+          <form id="book-online" name="book-online" data-netlify="true" action="mail.php" method="POST">
             <div class="row">
               <div class="col-md-6">
                 <div class="md-form mb-0">
@@ -228,10 +228,121 @@
                 <label class="form-check-label" for="no-spayed-neutered">No</label>
               </div>
             </div>
+
+            <div class="row">
+              <div class="form-check" style="margin-top: 30px;">Housebroken?
+                <input type="radio" class="form-check-input" id="has-boarded-daycare" name="daycare-or-boarding">
+                <label class="form-check-label" for="has-boarded-daycare">Yes</label>
+                <input type="radio" class="form-check-input" id="has-not-boarded-daycare" name="daycare-or-boarding">
+                <label class="form-check-label" for="has-not-boarded-daycare">No</label>
+              </div>
+              <div class="md-form mb-0" style="margin-left: 40px;">
+                <input type="text" id="if-boarded-daycare" name="if-boarded-daycare" class="form-control">
+                <label for="if-boarded-daycare" class="">If Yes, where?</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-check" style="margin-top: 30px;">Bitten Person or Dog?
+                <input type="radio" class="form-check-input" id="has-bitten" name="has-bitten">
+                <label class="form-check-label" for="has-bitten">Yes</label>
+                <input type="radio" class="form-check-input" id="has-not-bitten" name="has-bitten">
+                <label class="form-check-label" for="has-not-bitten">No</label>
+              </div>
+              <div class="md-form mb-0" style="margin-left: 40px;">
+                <input type="text" id="if-has-bit" name="if-has-bit" class="form-control">
+                <label for="if-has-bit" class="">If Yes, describe.</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-check" style="margin-top: 30px;">Agressive?
+                <input type="radio" class="form-check-input" id="is-aggressive" name="is-aggressive">
+                <label class="form-check-label" for="is-aggressive">Yes</label>
+                <input type="radio" class="form-check-input" id="is-not-aggressive" name="is-aggressive">
+                <label class="form-check-label" for="is-not-aggressive">No</label>
+              </div>
+              <div class="md-form mb-0" style="margin-left: 40px;">
+                <input type="text" id="if-aggressive" name="if-aggressive" class="form-control">
+                <label for="if-aggressive" class="">If Yes, describe?</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="form-check" style="margin-top: 30px;">Abusive Background?
+                <input type="radio" class="form-check-input" id="abusive-background" name="abusive-background">
+                <label class="form-check-label" for="abusive-background">Yes</label>
+                <input type="radio" class="form-check-input" id="not-abusive-background" name="abusive-background">
+                <label class="form-check-label" for="not-abusive-background">No</label>
+              </div>
+              <div class="md-form mb-0" style="margin-left: 40px;">
+                <input type="text" id="if-abused" name="if-abused" class="form-control">
+                <label for="if-abused" class="">If Yes, describe?</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="where-dog-stays" name="where-dog-stays" class="form-control">
+                  <label for="where-dog-stays" class="">Where does your dog stay when alone at home?</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="vet_office_name" name="vet_office_name" class="form-control">
+                  <label for="vet_office_name" class="">Vet's Office Name:</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="vet-name" name="vet-name" class="form-control">
+                  <label for="vet-name" class="">Dr's Name:</label>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="md-form mb-0">
+                  <input type="text" id="vet-phone" name="vet-phone" class="form-control">
+                  <label for="vet-phone" class="">Vet's Phone #:</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="vet-address" name="vet-address" class="form-control">
+                  <label for="vet-address" class="">Vet Address:</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="physical-problems" name="physical-problems" class="form-control">
+                  <label for="physical-problems" class="">Describe Any Physical Problems:</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="md-form mb-0">
+                  <input type="text" id="medications" name="medications" class="form-control">
+                  <label for="medications" class="">List Medications:</label>
+                </div>
+              </div>
+            </div>
+
+            
           </form>
 
           <div class="text-center text-md-left mt-4">
-            <a class="btn btn-primary" type="submit" form="new-customer-form"
+            <a class="btn btn-primary" type="submit" form="book-online"
               onclick="document.getElementById('new-customer-form').submit();">Send</a>
           </div>
           <div class="status"></div>
