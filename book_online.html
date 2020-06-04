@@ -214,8 +214,8 @@
               </div>
             </div>
 
-            <div class="row">
-              <div class="form-check" id="housebroken" name="housebroken">Housebroken?
+            <div class="row ml-1">
+              <!-- <div class="form-check" id="housebroken" name="housebroken">Housebroken?
                 <input type="radio" class="form-check-input" id="ishousebroken" name="ishousebroken">
                 <label class="form-check-label" for="housebroken">Yes</label>
                 <input type="radio" class="form-check-input" id="nothousebroken" name="nothousebroken">
@@ -226,7 +226,14 @@
                 <label class="form-check-label" for="is-spayed-neutered">Yes</label>
                 <input type="radio" class="form-check-input" id="no-spayed-neutered" name="spayed-neutered-">
                 <label class="form-check-label" for="no-spayed-neutered">No</label>
-              </div>
+              </div> -->
+              <label for="">Housebroken:
+              <select name="housebroken[]" class="mdb-select md-form">
+                <option value="" disabled selected>Select Option</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+              </select>
+              </label>
             </div>
 
             <div class="row">
@@ -338,7 +345,7 @@
               </div>
             </div>
 
-            
+
           </form>
 
           <div class="text-center text-md-left mt-4">
@@ -397,6 +404,12 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
+  <script>
+    // Material Select Initialization
+    $(document).ready(function () {
+      $('.mdb-select').materialSelect();
+    });
+  </script>
 </body>
 
 </html>
